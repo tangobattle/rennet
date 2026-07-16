@@ -1,0 +1,20 @@
+[package]
+name = "rennet"
+version = "0.1.0"
+edition = "2021"
+license = "MPL-2.0"
+description = "Reliable, ordered delivery over an unreliable, unordered datagram channel — the tango live-match netplay protocol"
+repository = "https://github.com/tangobattle/rennet"
+
+[dependencies]
+
+# Inlined from the tango workspace's [workspace.lints.clippy] this crate
+# used to inherit.
+[lints.clippy]
+new_without_default = "allow"
+type_complexity = "allow"
+identity_op = "allow"
+blocks_in_conditions = "allow"
+redundant_closure = "allow"
+too_many_arguments = "allow"
+needless_lifetimes = "allow"
